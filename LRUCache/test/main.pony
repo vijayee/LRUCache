@@ -18,7 +18,7 @@ class iso _TestLRUCacheInsertion is UnitTest
   fun apply(t: TestHelper) =>
     let size: USize = 5
     let overage: USize = 3
-    let cache = LRUCache[USize, USize](size, t)
+    let cache = LRUCache[USize, USize](size)
     for i in Range(0, size + overage) do
       cache(i) = i
     end
@@ -40,7 +40,7 @@ class iso _TestLRUCacheRemoval is UnitTest
   fun name(): String => "Testing LRU Removal"
   fun apply(t: TestHelper) =>
     let size: USize = 5
-    let cache = LRUCache[USize, USize](size, t)
+    let cache = LRUCache[USize, USize](size)
     for i in Range(0, size) do
       cache(i) = i
     end
@@ -59,7 +59,7 @@ class iso _TestLRUCacheSize1 is UnitTest
   fun apply(t: TestHelper) =>
     let size: USize = 1
     let overage: USize = 3
-    let cache = LRUCache[USize, USize](size, t)
+    let cache = LRUCache[USize, USize](size)
     for i in Range(0, size + overage) do
       cache(i) = i
     end
@@ -81,7 +81,7 @@ class iso _TestLRUCacheSize0 is UnitTest
   fun apply(t: TestHelper) =>
     let size: USize = 0
     let overage: USize = 3
-    let cache = LRUCache[USize, USize](size, t)
+    let cache = LRUCache[USize, USize](size)
     for i in Range(0, size + overage) do
       cache(i) = i
     end

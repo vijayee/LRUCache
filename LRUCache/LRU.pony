@@ -15,11 +15,9 @@ class LRUCache [K: (Hashable #read & Equatable[K] #read), V: V]
   let _size : USize
   var _start: (K | None) = None
   var _end: (K | None) = None
-  var _t: TestHelper
-  new create(size': USize, t: TestHelper) =>
+  new create(size': USize) =>
     _size = size'
     _cache = Map[K, LRUNode[K, V]](_size)
-    _t = t
 
   fun ref apply(key: K): (V | None) =>
     try
