@@ -1,5 +1,4 @@
 use "collections"
-use "ponytest"
 
 class LRUNode [K: (Hashable #read & Equatable[K] #read), V: V]
   var value: V
