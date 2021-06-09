@@ -7,7 +7,7 @@
     "homepage": "https://github.com/vijayee/LRUCache",
     "license": "GPLv3",
     "version": "0.0.1",
-    "name": "liboffs"
+    "name": "LRUCache"
   },
   "deps": [
 
