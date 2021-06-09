@@ -1,0 +1,15 @@
+{
+  "packages": [
+    "LRUCache"
+  ],
+  "info": {
+    "description": "Least-recently-used cache for pony ",
+    "homepage": "https://github.com/vijayee/LRUCache",
+    "license": "GPLv3",
+    "version": "0.0.1",
+    "name": "liboffs"
+  },
+  "deps": [
+
+  ]
+}
